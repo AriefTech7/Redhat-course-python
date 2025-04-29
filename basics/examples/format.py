@@ -10,7 +10,6 @@ print(separator)
 name = "{1},  {0}"
 print(name.format("First", "Last"))
 print(name.format("John", "Smith"))
-print(name.format("Melony", "Jones"))
 print(separator)
 
 dimensions = "Type: {type}\nHeight:{height}, Width:{width}"
