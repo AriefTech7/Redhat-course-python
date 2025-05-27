@@ -10,3 +10,12 @@ while cnt <= 100:
     total += cnt
 
 print("Total is:", total, "    Count is:", cnt)
+
+
+count = 0
+
+while count < 10:
+    count += 1
+    if count % 2 == 0:  # Check if the count is even
+        continue         # Skip the rest of the loop for even counts
+    print(count)        # This will only print odd counts

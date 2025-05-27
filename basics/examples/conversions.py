@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
 # conversions to an integer
-result = input("Please enter an integer: ")
-number = int(result)
-print("Your number plus 10 equals:", number + 10)
+result = int(input("Please enter an integer: "))
+# number = int(result)
+print("Your number plus 10 equals:", result + 10)
 print("String of", result, "converted to various bases as int:")
 fmt = "Base 10: {}\tBase 2: {}\tBase 8: {}\tBase 16: {}"
-print(fmt.format(int(result), int(result, 2), int(result, 8), int(result, 16)))
+print(fmt.format((result), (result, 2), (result, 8), (result, 16)))
 print()
 # conversions to a float
-a_float = input("Please enter a decimal number: ")
-sum_of_input = float(a_float) + float(result)
+a_float = float(input("Please enter a decimal number: "))
+sum_of_input = a_float + result
 print(a_float, "+", result, "=", sum_of_input)
 print()
-print(number, "as string in the following bases:")
+print(result, "as string in the following bases:")
 fmt = "Binary: {}\tOctal: {}\tHex: {}"
-print(fmt.format(bin(number), oct(number), hex(number)))
+print(fmt.format(bin(result), oct(result), hex(result)))
 
 print('ord("A") =', ord("A"), '     chr(66) =', chr(66))
 

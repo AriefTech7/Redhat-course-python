@@ -8,3 +8,5 @@
 text = input("Please enter a lucky number: ")
 if not text.isnumeric():
     print("The value you entered is not an integer")
+elif text:
+    print(len(text))
