@@ -19,7 +19,7 @@
 
 
 
-#exercis 4.2
+#exercise 4.2
 
 #def panjang(name):
 #     return len(max(name))

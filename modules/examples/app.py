@@ -3,7 +3,7 @@ import reusable
 
 
 def main():
-    print(reusable.square(5), reusable.cube(5))
+    print(f"this is a result {reusable.square(5)}, {reusable.cube(5)}")
 
 
 if __name__ == "__main__":
