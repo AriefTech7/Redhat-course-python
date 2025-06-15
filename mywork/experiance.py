@@ -88,13 +88,49 @@ from tkinter import Label
 # tampil.mainloop()
 
 #timer sederhana
-second = int(input("masukan second yang you need "))
+# second = int(input("masukan second yang you need "))
+
+# while second >= 0:
+#     print(second)
+#     time.sleep(1)
+#     second -= 1
+#     if second == 0:
+#         break
+
+class Binatang:
+    def suara(self):
+        pass
+
+class Kucing(Binatang):
+    def suara(self):
+        print("Meong~")
+
+class Manager:
+    pass
+
+class Executive(Manager):
+    pass
+
+kucing = Kucing()
+kucing.suara()
+
+#isintance mengecek apa objek termasuk class tertentu
+print(isinstance(kucing, Kucing))
+print(isinstance(kucing, Manager))
+#issubclass mengecek apakah class ini adalah subclass dari class lain
+print(issubclass(Kucing, Binatang))
+print(issubclass(Kucing, Manager))
+
+class Minuman:
+    def __init__(self):
+        self.__rasa = "jeruk"
+    def get_rasa(self):
+        return self.__rasa
+    def set_rasa(self, rasa_baru):
+        self.__rasa = rasa_baru
 
 
-while second >= 0:
-    print(second)
-    time.sleep(1)
-    second -= 1
-    if second == 0:
-        break
-
+m = Minuman()
+print(m.get_rasa())
+m.set_rasa("mangga")
+print(m.get_rasa())

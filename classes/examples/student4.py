@@ -30,3 +30,6 @@ class Student:
         else:
             return self.name == obj.name and \
                    self.major == obj.major
+
+
+
