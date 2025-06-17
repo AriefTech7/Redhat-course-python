@@ -16,3 +16,6 @@ class Fraction:
 
     def __str__(self):
         return "{}/{}".format(self.numerator, self.denominator)
+
+class InputError(Exception):
+    pass
